@@ -1,0 +1,137 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="AD9D018E-BAD7-1FFC-A688-5406FFFB1C66" name="log owner">
+<createdBy>anze</createdBy>
+<createdTime>2025-07-21 09:49:59 UTC</createdTime>
+<ownerDesignName>jLogQSL</ownerDesignName>
+<importedID>93A4B6E3-6CD2-BA0A-F03C-EEC10FBE82BE</importedID>
+<engineerTo>
+<item key="BA1F033A-3260-E180-8D21-99619962EC46" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="F9E40AC4-410E-44D5-A410-E90AA75909DE">
+<createdBy>anze</createdBy>
+<createdTime>2025-07-21 09:49:59 UTC</createdTime>
+<ownerDesignName>jLogQSL</ownerDesignName>
+<importedID>4FFD2B3B-9CB8-E46C-D099-2AA61B24B431</importedID>
+<engineerTo>
+<item key="BA1F033A-3260-E180-8D21-99619962EC46" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="callsign" id="F5F3B56D-C4E2-A44F-68A8-74FBBC53E3B8">
+<createdBy>anze</createdBy>
+<createdTime>2025-07-21 09:49:59 UTC</createdTime>
+<ownerDesignName>jLogQSL</ownerDesignName>
+<importedID>6B02534E-6B8B-C5C6-250C-187C1CFE8069</importedID>
+<engineerTo>
+<item key="BA1F033A-3260-E180-8D21-99619962EC46" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name" id="507941A9-36D6-309D-B807-7B203B8B5353">
+<createdBy>anze</createdBy>
+<createdTime>2025-07-21 09:49:59 UTC</createdTime>
+<ownerDesignName>jLogQSL</ownerDesignName>
+<importedID>DBE229CF-9AA2-5841-1B56-D938C0DE2848</importedID>
+<engineerTo>
+<item key="BA1F033A-3260-E180-8D21-99619962EC46" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="surname" id="29A41A90-597A-0D07-D848-2EE5F1295C20">
+<createdBy>anze</createdBy>
+<createdTime>2025-07-21 09:49:59 UTC</createdTime>
+<ownerDesignName>jLogQSL</ownerDesignName>
+<importedID>C3F95FB9-DFB3-65AD-0B5F-714C8EC0053E</importedID>
+<engineerTo>
+<item key="BA1F033A-3260-E180-8D21-99619962EC46" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="country" id="A609768F-D9F1-7BF6-5B2A-7B5E8931A348">
+<createdBy>anze</createdBy>
+<createdTime>2025-07-21 09:49:59 UTC</createdTime>
+<ownerDesignName>jLogQSL</ownerDesignName>
+<importedID>D0C32621-4235-51BF-B807-542EA025551B</importedID>
+<engineerTo>
+<item key="BA1F033A-3260-E180-8D21-99619962EC46" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="licence class" id="A485277E-EECD-FDE6-506F-5C20E452101D">
+<createdBy>anze</createdBy>
+<createdTime>2025-07-21 09:49:59 UTC</createdTime>
+<ownerDesignName>jLogQSL</ownerDesignName>
+<importedID>9B9BC1C8-DB2D-A796-0D29-B1B4AADA2A07</importedID>
+<engineerTo>
+<item key="BA1F033A-3260-E180-8D21-99619962EC46" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="notes" id="14E43E17-6A4D-28D2-BC1C-D21B6A1AEE65">
+<createdBy>anze</createdBy>
+<createdTime>2025-07-21 09:49:59 UTC</createdTime>
+<ownerDesignName>jLogQSL</ownerDesignName>
+<importedID>2B119E2B-DABB-290D-4DEE-A4F91C0E5AD6</importedID>
+<engineerTo>
+<item key="BA1F033A-3260-E180-8D21-99619962EC46" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1024 CHAR</dataTypeSize>
+<ownDataTypeParameters>1024 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7DFF5122-E4BE-1A7D-3974-363465B72CDA" name="log owner PK">
+<createdBy>anze</createdBy>
+<createdTime>2025-07-21 09:49:59 UTC</createdTime>
+<ownerDesignName>jLogQSL</ownerDesignName>
+<importedID>CAEDE4B8-4F54-F018-23B5-A42B315D32BF</importedID>
+<engineerTo>
+<item key="BA1F033A-3260-E180-8D21-99619962EC46" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F9E40AC4-410E-44D5-A410-E90AA75909DE</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

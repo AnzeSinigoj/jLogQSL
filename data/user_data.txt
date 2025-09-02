@@ -1,0 +1,1 @@
+DB_path "/home/anze/Documents/DatabaseLog/jLogQSL.db"

@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="modes FK" directorySegmentName="seg_0" id="8FD46749-B28B-D800-19A4-EF71D06D47AA">
+<createdBy>anze</createdBy>
+<createdTime>2025-07-21 09:49:59 UTC</createdTime>
+<ownerDesignName>jLogQSL</ownerDesignName>
+<importedID>DE324858-3873-76A6-E574-AEF67725672E</importedID>
+<engineerTo>
+<item key="BA1F033A-3260-E180-8D21-99619962EC46" value="true"/>
+</engineerTo>
+<sourcePk>940F3248-017C-F059-9077-0698A99BE789</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>6EB8A913-7C8B-EF6C-4B49-2C1465B843F6</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>12E8D6CA-7223-3A49-9DF4-A7F201E4318B</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

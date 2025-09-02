@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1D31C1CB-FDFA-8D3C-CE6F-DDA8F64DCE7D" name="modes">
+<createdBy>anze</createdBy>
+<createdTime>2025-07-21 09:52:10 UTC</createdTime>
+<generatorID>6EB8A913-7C8B-EF6C-4B49-2C1465B843F6</generatorID>
+<ownerDesignName>jLogQSL</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="0D9504D0-1279-8452-AF5F-7173829D2230">
+<createdBy>anze</createdBy>
+<createdTime>2025-07-21 09:52:10 UTC</createdTime>
+<generatorID>277B8227-F735-CC57-4BE3-02B1B35C38D2</generatorID>
+<ownerDesignName>jLogQSL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="A98DEFEB-6BF0-3619-B09E-3DE1C3D1C0CA">
+<createdBy>anze</createdBy>
+<createdTime>2025-07-21 09:52:10 UTC</createdTime>
+<generatorID>5942741F-7A8B-DEBF-5458-9FC46B30293B</generatorID>
+<ownerDesignName>jLogQSL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="description" id="2194E7FB-6CF3-B32C-08D5-56961710A2FB">
+<createdBy>anze</createdBy>
+<createdTime>2025-07-21 09:52:10 UTC</createdTime>
+<generatorID>4D3F0447-F7BB-051E-C0DC-3A333E87245F</generatorID>
+<ownerDesignName>jLogQSL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1024 CHAR</dataTypeSize>
+<ownDataTypeParameters>1024 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B135728A-F947-416C-80E5-DF42825D16E0" name="modes_PK">
+<createdBy>anze</createdBy>
+<createdTime>2025-07-21 09:52:10 UTC</createdTime>
+<generatorID>940F3248-017C-F059-9077-0698A99BE789</generatorID>
+<ownerDesignName>jLogQSL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0D9504D0-1279-8452-AF5F-7173829D2230"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

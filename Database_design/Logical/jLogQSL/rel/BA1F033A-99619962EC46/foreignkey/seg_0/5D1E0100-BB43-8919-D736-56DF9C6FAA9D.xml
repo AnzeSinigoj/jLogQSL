@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="5D1E0100-BB43-8919-D736-56DF9C6FAA9D" containerWithKeyObject="0CD0558B-3C12-2C33-A4AD-1AE0D1577322" localFKIndex="ED65F330-AB78-379F-AEA8-ED41EE377F82" name="log_entries_bands_FK">
+<createdBy>anze</createdBy>
+<createdTime>2025-07-21 09:52:10 UTC</createdTime>
+<generatorID>51A2E180-F7BB-3941-001A-C5C344F293C3</generatorID>
+<ownerDesignName>jLogQSL</ownerDesignName>
+<referredTableLongName>bands</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>2F51D9FA-6420-FF39-63CB-D8C6C6A8F02F</referredTableID>
+<keyObject>9173B685-CC5C-8215-CD14-134FE85DDFFF</keyObject>
+<referredKeyID>9173B685-CC5C-8215-CD14-134FE85DDFFF</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

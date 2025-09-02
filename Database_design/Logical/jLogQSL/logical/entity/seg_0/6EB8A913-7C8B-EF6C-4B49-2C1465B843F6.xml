@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6EB8A913-7C8B-EF6C-4B49-2C1465B843F6" name="modes">
+<createdBy>anze</createdBy>
+<createdTime>2025-07-21 09:49:59 UTC</createdTime>
+<ownerDesignName>jLogQSL</ownerDesignName>
+<importedID>432BADD0-F84C-0B9B-479F-7E679BDBE380</importedID>
+<engineerTo>
+<item key="BA1F033A-3260-E180-8D21-99619962EC46" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="277B8227-F735-CC57-4BE3-02B1B35C38D2">
+<createdBy>anze</createdBy>
+<createdTime>2025-07-21 09:49:59 UTC</createdTime>
+<ownerDesignName>jLogQSL</ownerDesignName>
+<importedID>7B32850B-A45F-7606-1886-4D0E635FA987</importedID>
+<engineerTo>
+<item key="BA1F033A-3260-E180-8D21-99619962EC46" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name" id="5942741F-7A8B-DEBF-5458-9FC46B30293B">
+<createdBy>anze</createdBy>
+<createdTime>2025-07-21 09:49:59 UTC</createdTime>
+<ownerDesignName>jLogQSL</ownerDesignName>
+<importedID>5441C239-5E91-C027-E790-F4012D4AF556</importedID>
+<engineerTo>
+<item key="BA1F033A-3260-E180-8D21-99619962EC46" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="description" id="4D3F0447-F7BB-051E-C0DC-3A333E87245F">
+<createdBy>anze</createdBy>
+<createdTime>2025-07-21 09:49:59 UTC</createdTime>
+<ownerDesignName>jLogQSL</ownerDesignName>
+<importedID>9DC4678A-1CCB-A63D-7C3F-FCC29C77592E</importedID>
+<engineerTo>
+<item key="BA1F033A-3260-E180-8D21-99619962EC46" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1024 CHAR</dataTypeSize>
+<ownDataTypeParameters>1024 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="940F3248-017C-F059-9077-0698A99BE789" name="modes_PK">
+<createdBy>anze</createdBy>
+<createdTime>2025-07-21 09:49:59 UTC</createdTime>
+<ownerDesignName>jLogQSL</ownerDesignName>
+<importedID>7DB7F4DA-D499-4974-676E-0C092D59AC1F</importedID>
+<engineerTo>
+<item key="BA1F033A-3260-E180-8D21-99619962EC46" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>277B8227-F735-CC57-4BE3-02B1B35C38D2</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

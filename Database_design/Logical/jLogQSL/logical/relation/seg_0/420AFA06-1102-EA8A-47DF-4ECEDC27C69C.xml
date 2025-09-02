@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="custom qths FK" directorySegmentName="seg_0" id="420AFA06-1102-EA8A-47DF-4ECEDC27C69C">
+<createdBy>anze</createdBy>
+<createdTime>2025-07-21 09:49:59 UTC</createdTime>
+<ownerDesignName>jLogQSL</ownerDesignName>
+<importedID>B8AD48B4-6955-AAD3-8560-D02B762E8896</importedID>
+<engineerTo>
+<item key="BA1F033A-3260-E180-8D21-99619962EC46" value="true"/>
+</engineerTo>
+<sourcePk>DCC64475-67F1-804C-F036-508BE865FE69</sourcePk>
+<targetPk>ABE8F3BD-146D-4625-A916-F72713AD27F2</targetPk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>12E8D6CA-7223-3A49-9DF4-A7F201E4318B</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>85C85157-1E24-B1DD-4527-C0E678227AC5</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

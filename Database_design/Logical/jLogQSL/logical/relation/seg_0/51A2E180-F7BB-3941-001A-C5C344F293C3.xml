@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="bands FK" directorySegmentName="seg_0" id="51A2E180-F7BB-3941-001A-C5C344F293C3">
+<createdBy>anze</createdBy>
+<createdTime>2025-07-21 09:49:59 UTC</createdTime>
+<ownerDesignName>jLogQSL</ownerDesignName>
+<importedID>3C99FB6D-8995-25E2-648F-084213D746DA</importedID>
+<engineerTo>
+<item key="BA1F033A-3260-E180-8D21-99619962EC46" value="true"/>
+</engineerTo>
+<sourcePk>37EE9EF4-E5CD-6F12-B000-81A270CDCC66</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>3F6C1A78-CEA7-8B14-7565-E5EFAE2664CC</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>12E8D6CA-7223-3A49-9DF4-A7F201E4318B</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

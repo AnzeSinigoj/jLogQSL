@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="jLogQSL" id="4C52EA80-0D85-6138-BBB0-A77278DC5F2A" version="3.5">
+<createdBy>anze</createdBy>
+<createdTime>2025-07-21 09:48:22 UTC</createdTime>
+<ownerDesignName>jLogQSL</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>4C52EA80-0D85-6138-BBB0-A77278DC5F2A</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="8A575D44-1F25-57D8-B648-CC67664F5B28">
+<designStoragePath>C:\Users\filip\Documents\NetBeansProjects\jLogQSL\Database_design\Logical\jLogQSL</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="697B7818-E360-383C-44FA-1E9A44E56032">
+<designStoragePath>C:\Users\filip\Documents\NetBeansProjects\jLogQSL\Database_design\Logical\jLogQSL</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>

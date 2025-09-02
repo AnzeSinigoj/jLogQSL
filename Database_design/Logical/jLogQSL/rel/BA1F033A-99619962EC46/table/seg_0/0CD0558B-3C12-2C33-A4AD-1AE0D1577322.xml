@@ -1,0 +1,214 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0CD0558B-3C12-2C33-A4AD-1AE0D1577322" name="log_entries">
+<createdBy>anze</createdBy>
+<createdTime>2025-07-21 09:52:10 UTC</createdTime>
+<generatorID>12E8D6CA-7223-3A49-9DF4-A7F201E4318B</generatorID>
+<ownerDesignName>jLogQSL</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="AFF8CB23-2B8A-D22E-09FC-B664D1EF6B68">
+<createdBy>anze</createdBy>
+<createdTime>2025-07-21 09:52:10 UTC</createdTime>
+<generatorID>DA11CBE5-A133-AD55-DE0F-8CAEA2135C92</generatorID>
+<ownerDesignName>jLogQSL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="callsign" id="9AFD1FF0-FBD4-6DE5-CE3E-38B62E78CB0A">
+<createdBy>anze</createdBy>
+<createdTime>2025-07-21 09:52:10 UTC</createdTime>
+<generatorID>A685A8F0-708C-86C4-BDCF-DF79C9A60CCA</generatorID>
+<ownerDesignName>jLogQSL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date" id="B22611AC-A660-0A21-0503-30E304CA4EE9">
+<createdBy>anze</createdBy>
+<createdTime>2025-07-21 09:52:10 UTC</createdTime>
+<generatorID>A62DDCF6-6C52-5A9A-6CFE-631015087DD7</generatorID>
+<ownerDesignName>jLogQSL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sent_report" id="0A76CCF0-7138-CD53-C2B4-2BC51815488F">
+<createdBy>anze</createdBy>
+<createdTime>2025-07-21 09:52:10 UTC</createdTime>
+<generatorID>BF52C0B5-69A8-3DE4-DE9F-2B103B4F562E</generatorID>
+<ownerDesignName>jLogQSL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 CHAR</dataTypeSize>
+<ownDataTypeParameters>5 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="received_report" id="43303254-F1CD-B252-1452-2B47BEEB9624">
+<createdBy>anze</createdBy>
+<createdTime>2025-07-21 09:52:10 UTC</createdTime>
+<generatorID>A0A4E0E7-6698-DFA5-D2B8-4CFCA17F5277</generatorID>
+<ownerDesignName>jLogQSL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 CHAR</dataTypeSize>
+<ownDataTypeParameters>5 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="power" id="DD07C885-36CF-B38F-92A6-9D8E2C682FB5">
+<createdBy>anze</createdBy>
+<createdTime>2025-07-21 09:52:10 UTC</createdTime>
+<generatorID>4F8571C8-0288-A006-7850-E32D8AE3A3F9</generatorID>
+<ownerDesignName>jLogQSL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="frequency" id="D1C7D921-FA47-00A5-B342-26DAB9674428">
+<createdBy>anze</createdBy>
+<createdTime>2025-07-21 09:52:10 UTC</createdTime>
+<generatorID>B1889610-555C-25B5-03AE-A285B532F609</generatorID>
+<ownerDesignName>jLogQSL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="qth" id="2DF16355-B6F9-CB62-81A5-82EE8B0CB100">
+<createdBy>anze</createdBy>
+<createdTime>2025-07-21 09:52:10 UTC</createdTime>
+<generatorID>2DFF99A2-B3D4-65B2-CDF6-4797598E2E45</generatorID>
+<ownerDesignName>jLogQSL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="note" id="5D80830F-BFF5-D768-5489-5AC407292D82">
+<createdBy>anze</createdBy>
+<createdTime>2025-07-21 09:52:10 UTC</createdTime>
+<generatorID>92F0C03E-B343-B251-CA19-B519A69322FC</generatorID>
+<ownerDesignName>jLogQSL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1024 CHAR</dataTypeSize>
+<ownDataTypeParameters>1024 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="modes_id" id="EF31C888-5310-D198-BB61-72BCF2F16ED7">
+<createdBy>anze</createdBy>
+<createdTime>2025-07-21 09:52:10 UTC</createdTime>
+<generatorID>3EE28321-6011-08BA-4EA9-918D7B06A407</generatorID>
+<ownerDesignName>jLogQSL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8B8C247E-577A-11C3-20DD-8F27E8BF6DA2" referredColumn="0D9504D0-1279-8452-AF5F-7173829D2230"/>
+</associations>
+</Column>
+<Column name="bands_id" id="99D65BB9-218F-CFF5-D6E4-266C059A1B3B">
+<createdBy>anze</createdBy>
+<createdTime>2025-07-21 09:52:10 UTC</createdTime>
+<generatorID>4A1636E5-720D-DED2-D093-40DC887C57BD</generatorID>
+<ownerDesignName>jLogQSL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5D1E0100-BB43-8919-D736-56DF9C6FAA9D" referredColumn="99E9BB38-F494-8FF8-88F1-F9321A48928A"/>
+</associations>
+</Column>
+<Column name="custom_qths_id" id="1DDD30B3-C856-509B-2B5F-0892FACDF95C">
+<createdBy>anze</createdBy>
+<createdTime>2025-07-21 09:52:10 UTC</createdTime>
+<generatorID>BA3E029A-703E-DA4C-D41C-FA4FF9316644</generatorID>
+<ownerDesignName>jLogQSL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B530155D-4959-E15D-1EAF-A88C67BE12D2" referredColumn="44726568-0BC2-274C-1D56-C3409FBDDAE7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="39F20B53-5D01-BBD5-4ADB-6AA562CA3C72" name="log_entries_PK">
+<createdBy>anze</createdBy>
+<createdTime>2025-07-21 09:52:10 UTC</createdTime>
+<generatorID>DCC64475-67F1-804C-F036-508BE865FE69</generatorID>
+<ownerDesignName>jLogQSL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AFF8CB23-2B8A-D22E-09FC-B664D1EF6B68"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="ED65F330-AB78-379F-AEA8-ED41EE377F82" name="log_entries_bands_FK">
+<createdBy>anze</createdBy>
+<createdTime>2025-07-21 09:52:10 UTC</createdTime>
+<generatorID>51A2E180-F7BB-3941-001A-C5C344F293C3</generatorID>
+<ownerDesignName>jLogQSL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="99D65BB9-218F-CFF5-D6E4-266C059A1B3B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2A60A294-67B4-5FCA-E0B7-3AA506676EF1" name="log_entries_custom_qths_FK">
+<createdBy>anze</createdBy>
+<createdTime>2025-07-21 09:52:10 UTC</createdTime>
+<generatorID>420AFA06-1102-EA8A-47DF-4ECEDC27C69C</generatorID>
+<ownerDesignName>jLogQSL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1DDD30B3-C856-509B-2B5F-0892FACDF95C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EA30E8B9-1184-8F93-6221-D90E75E255FD" name="log_entries_modes_FK">
+<createdBy>anze</createdBy>
+<createdTime>2025-07-21 09:52:10 UTC</createdTime>
+<generatorID>8FD46749-B28B-D800-19A4-EF71D06D47AA</generatorID>
+<ownerDesignName>jLogQSL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EF31C888-5310-D198-BB61-72BCF2F16ED7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
