@@ -7,6 +7,13 @@ jLogQSL is an amateur radio contact logging software written in Java Swing.
 ⚠️ **Work in Progress:** Some features are still missing, and bugs may be present.  
 The **first stable release** will be made once all features are complete.
 
+#### Missing features:
+- Exporting to ADIF, TXT, PDF
+- Statistics
+- Custom query
+- Sync time with NTP
+- Manual
+
 ## Requirements
 - **Java** (JDK 8 or higher)
 
