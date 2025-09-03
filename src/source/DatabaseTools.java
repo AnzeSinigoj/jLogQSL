@@ -439,4 +439,40 @@ public class DatabaseTools {
             return new String[0][0];
         }
     }
+
+    public void updateDB(int id, String call, String date, String sent_rep, String rcv_rep, int band, int mode, double power, String freq, String qth, int custom_qth, String note, JOptionPane prompt, String DBPathPublic) {
+        String sql = "UPDATE log_entries "
+                + "SET callsign = ?, "
+                + "date = ?, "
+                + "sent_report = ?, "
+                + "received_report = ?, "
+                + "bands_id = ?, "
+                + "modes_id = ?, "
+                + "power = ?, "
+                + "frequency = ?, "
+                + "qth = ?, "
+                + "custom_qths_id = ?, "
+                + "note = ? "
+                + "WHERE id = ?;";
+
+        try (Connection DBcon = connectToDB(new File(DBPathPublic)); PreparedStatement stmt = DBcon.prepareStatement(sql)) {
+            stmt.setString(1, call);
+            stmt.setString(2, date);
+            stmt.setString(3, sent_rep);
+            stmt.setString(4, rcv_rep);
+            stmt.setInt(5, band);
+            stmt.setInt(6, mode);
+            stmt.setDouble(7, power);
+            stmt.setString(8, freq);
+            stmt.setString(9, qth);
+            stmt.setInt(10, custom_qth);
+            stmt.setString(11, note);
+            stmt.setInt(12, id);
+
+            int rowsUpdated = stmt.executeUpdate();
+            System.out.println(rowsUpdated + " row(s) updated.");
+        } catch (SQLException e) {
+            prompt.showMessageDialog(null, "Database error.", "Error", JOptionPane.ERROR_MESSAGE);
+        }
+    }
 }
