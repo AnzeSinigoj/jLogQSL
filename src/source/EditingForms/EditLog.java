@@ -347,10 +347,68 @@ public class EditLog extends javax.swing.JFrame {
                 arr[10] = qth;
             }
         }
-        
+
         //Writing changes into the database
-        
+        for (String[] arr : modifiedRows) {
+            /* id = 0
+            * call = 1
+            * date = 2
+            * sent = 3
+            * rcv = 4
+            * band = 5
+            * mode = 6
+            * power = 7
+            * freq = 8
+            * qth = 9
+            * custom qth = 10
+            * note = 11
+             */
+            int id, band, mode, custom_qth, tmp;
+            double power, tmp_double;
+
+            //Converting into the right datatype
+            id = requireInt(arr[0], "ID");
+            band = requireInt(arr[5], "Band");
+            mode = requireInt(arr[6], "Mode");
+            custom_qth = requireInt(arr[10], "MY QTH");
+            power = requireDouble(arr[7], "Power");
+
+            dbt.updateDB(id, arr[1], arr[2], arr[3], arr[4], band, mode, power, arr[8], arr[9], custom_qth, arr[11], jOptionPane1, Main.DBpathPublic);
+
+        }
     }//GEN-LAST:event_jButton3ActionPerformed
+    
+    public double convertToDouble(String number) {
+        try {
+            return Double.parseDouble(number);
+        } catch (Exception e) {
+            return -1.0;
+        }
+    }
+
+    public int convertToInt(String number) {
+        try {
+            return Integer.parseInt(number);
+        } catch (Exception e) {
+            return -1;
+        }
+    }
+
+    private int requireInt(String value, String fieldName) {
+        int tmp = convertToInt(value);
+        if (tmp == -1) {
+            JOptionPane.showMessageDialog(null, fieldName + " is not a number", "Error", JOptionPane.ERROR_MESSAGE);
+        }
+        return tmp;
+    }
+
+    private double requireDouble(String value, String fieldName) {
+        double tmp = convertToDouble(value);
+        if (Double.isNaN(tmp)) {
+            JOptionPane.showMessageDialog(null, fieldName + " is not a number", "Error", JOptionPane.ERROR_MESSAGE);
+        }
+        return tmp;
+    }
 
     /**
      * @param args the command line arguments
