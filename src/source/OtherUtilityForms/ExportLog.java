@@ -168,6 +168,81 @@ public class ExportLog extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    int id_len;
+    int call_len;
+    int date_len;
+    int sent_len;
+    int recv_len;
+    int band_len;
+    int mode_len;
+    int power_len;
+    int freq_len;
+    int qth_len;
+    int myqth_len;
+    int note_len;
+    int total_len;
+
+    public int returnLongestColumnLength(String arr[][], int column_index) {
+        int len = 0;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i][column_index] == null) {
+                continue;
+            }
+            if (arr[i][column_index].length() > len) {
+                len = arr[i][column_index].length();
+            }
+
+        }
+        return len;
+    }
+
+    public String centerString(String text, int len) {
+        if (text == null) {
+            return " ".repeat(len);
+        } else {
+            int space_avalible = len - text.length();
+            int l_pad = space_avalible / 2;
+            int r_pad = space_avalible - l_pad;
+
+            l_pad = (l_pad > 0) ? l_pad : l_pad * -1;
+            r_pad = (r_pad > 0) ? r_pad : r_pad * -1;
+
+            return " ".repeat(l_pad) + text + " ".repeat(r_pad);
+        }
+    }
+
+    public int getLen(int index) {
+        switch (index) {
+            case 0:
+                return id_len;
+            case 1:
+                return call_len;
+            case 2:
+                return date_len;
+            case 3:
+                return sent_len;
+            case 4:
+                return recv_len;
+            case 5:
+                return band_len;
+            case 6:
+                return mode_len;
+            case 7:
+                return power_len;
+            case 8:
+                return freq_len;
+            case 9:
+                return qth_len;
+            case 10:
+                return myqth_len;
+            case 11:
+                return note_len;
+            default:
+                return 0;
+        }
+    }
+
+
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         String sql_call = "SELECT L.ID AS ID, L.callsign AS CALLSIGN, L.date AS 'DATE & TIME', L.sent_report AS 'SENT REPORT', L.received_report AS 'RECEIVED REPORT', "
                 + "B.name AS BAND, M.name AS MODE, L.power AS POWER, L.frequency AS FREQUENCY, L.qth AS QTH, Q.name AS 'MY QTH', L.note AS NOTE "
@@ -176,7 +251,9 @@ public class ExportLog extends javax.swing.JPanel {
                 + "LEFT JOIN BANDS B ON B.id = L.bands_id "
                 + "LEFT JOIN custom_qths Q ON Q.id = L.custom_qths_id";
         String[][] data = dbt.getArrayFromQuery(Main.DBpathPublic, sql_call, jOptionPane1);
+
         try {
+            PrintWriter pw = new PrintWriter(new File(path));
             switch (jComboBox1.getSelectedIndex()) {
                 case 0:
                     // ADIF (.adi)
@@ -186,7 +263,6 @@ public class ExportLog extends javax.swing.JPanel {
                     break;
                 case 2:
                     //CSV (.csv)
-                    PrintWriter pw = new PrintWriter(new File(path));
                     for (int i = 0; i < data.length; i++) {
                         writeStringOrInt(pw, data[i][0], true);
                         for (int j = 1; j < data[i].length; j++) {
@@ -198,6 +274,31 @@ public class ExportLog extends javax.swing.JPanel {
                     break;
                 case 3:
                     //TXT (.txt)
+                    //Assigning value
+                    id_len = returnLongestColumnLength(data, 0) + 2;
+                    call_len = returnLongestColumnLength(data, 1) + 2;
+                    date_len = returnLongestColumnLength(data, 2) + 2;
+                    sent_len = returnLongestColumnLength(data, 3) + 2;
+                    recv_len = returnLongestColumnLength(data, 4) + 2;
+                    band_len = returnLongestColumnLength(data, 5) + 2;
+                    mode_len = returnLongestColumnLength(data, 6) + 2;
+                    power_len = returnLongestColumnLength(data, 7) + 2;
+                    freq_len = returnLongestColumnLength(data, 8) + 2;
+                    qth_len = returnLongestColumnLength(data, 9) + 2;
+                    myqth_len = returnLongestColumnLength(data, 10) + 2;
+                    note_len = 25; //FIX!!! make so after 25 char it grows in size
+
+                    //Getting the total length of the table 
+                    total_len = id_len + call_len + date_len + sent_len + recv_len + band_len + mode_len + power_len + freq_len + qth_len + myqth_len + note_len;
+                    pw.println("+" + "-".repeat(total_len) + "+");
+                    for (int i = 0; i < data.length; i++) {
+                        for (int j = 0; j < data[i].length; j++) {
+                            pw.print("|" + centerString(data[i][j], getLen(j)) + "|");
+                        }
+                        pw.println();
+                    }
+                    pw.println("+" + "-".repeat(total_len) + "+"); //Print the last bar
+                    pw.close();
                     break;
                 case 4:
                     //PDF (.pdf)
