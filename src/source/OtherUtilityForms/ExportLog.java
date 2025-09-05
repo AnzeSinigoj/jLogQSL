@@ -7,6 +7,7 @@ package source.OtherUtilityForms;
 import java.awt.Window;
 import java.io.File;
 import java.io.PrintWriter;
+import java.util.ArrayList;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 import javax.swing.SwingUtilities;
@@ -211,6 +212,40 @@ public class ExportLog extends javax.swing.JPanel {
         }
     }
 
+    public String centerLeft(String text, int len) {
+        if (text == null) {
+            return " ".repeat(len);
+        } else {
+            int space_avalible = len - text.length();
+
+            space_avalible = (space_avalible > 0) ? space_avalible : space_avalible * -1;
+
+            return text + " ".repeat(space_avalible);
+        }
+    }
+
+    public ArrayList subdivideNote(String note, int len) {
+        note = (note == null) ? "" : note;
+        note = note.replaceAll("[\\n\\r\\t]", "");
+        ArrayList<String> tmp = new ArrayList<>();
+        while (true) {
+            if (note.length() <= len) {
+                tmp.add(note);
+                break;
+            } else {
+                if (note.charAt(len - 1) != ' ') {
+                    tmp.add(note.substring(0, len - 1) + "-");
+                    note = note.substring(len - 1);
+
+                } else {
+                    tmp.add(note.substring(0, len));
+                    note = note.substring(len);
+                }
+            }
+        }
+        return tmp;
+    }
+
     public int getLen(int index) {
         switch (index) {
             case 0:
@@ -286,14 +321,34 @@ public class ExportLog extends javax.swing.JPanel {
                     freq_len = returnLongestColumnLength(data, 8) + 2;
                     qth_len = returnLongestColumnLength(data, 9) + 2;
                     myqth_len = returnLongestColumnLength(data, 10) + 2;
-                    note_len = 25; //FIX!!! make so after 25 char it grows in size
+                    note_len = 50;
+                    total_len = id_len + call_len + date_len + sent_len + recv_len + band_len + mode_len + power_len + freq_len + qth_len + myqth_len + note_len + data[0].length - 1;
 
-                    //Getting the total length of the table 
-                    total_len = id_len + call_len + date_len + sent_len + recv_len + band_len + mode_len + power_len + freq_len + qth_len + myqth_len + note_len;
+                    //Write head pannel
                     pw.println("+" + "-".repeat(total_len) + "+");
-                    for (int i = 0; i < data.length; i++) {
-                        for (int j = 0; j < data[i].length; j++) {
-                            pw.print("|" + centerString(data[i][j], getLen(j)) + "|");
+                    pw.print("|");
+                    for (int i = 0; i < data[0].length; i++) {
+                        pw.print(centerString(data[0][i], getLen(i)) + "|");
+                    }
+                    pw.println("+" + "-".repeat(total_len) + "+");
+
+                    for (int i = 1; i < data.length; i++) {
+                        pw.print("|");
+                        for (int j = 0; j < data[i].length - 1; j++) { //Exclude the note
+                            pw.print(centerString(data[i][j], getLen(j)) + "|");
+                        }
+                        //Handle the note
+                        ArrayList<String> note_chunks = subdivideNote(data[i][data.length], note_len - 1);
+                        if (note_chunks.size() <= 1) {
+                            pw.print(" " + centerLeft(data[i][data[i].length - 1], note_len - 1) + "|");
+                        } else {
+                            pw.println(" " + centerLeft(note_chunks.get(0), note_len - 1) + "|");
+                            pw.print("| " + " ".repeat(total_len - note_len - 2));
+                            for (int j = 1; j < note_chunks.size() - 1; j++) {
+                                pw.println(" " + centerLeft(note_chunks.get(j), note_len) + "|");
+                                pw.print("| " + " ".repeat(total_len - note_len - 2));
+                            }
+                            pw.print(" " + centerLeft(note_chunks.get(note_chunks.size() - 1), note_len) + "|");
                         }
                         pw.println();
                     }
@@ -304,8 +359,13 @@ public class ExportLog extends javax.swing.JPanel {
                     //PDF (.pdf)
                     break;
             }
+            jOptionPane1.showMessageDialog(null, "Log successfully exported.", "Success.", JOptionPane.INFORMATION_MESSAGE);
+            Window this_w = SwingUtilities.getWindowAncestor(this);
+            if (this_w != null) {
+                this_w.dispose();
+            }
         } catch (Exception e) {
-            jOptionPane1.showMessageDialog(null, "Failed to write data.", "Error", JOptionPane.ERROR_MESSAGE);
+            jOptionPane1.showMessageDialog(null, "Export failed.", "Error", JOptionPane.ERROR_MESSAGE);
             e.printStackTrace();
         }
     }//GEN-LAST:event_jButton2ActionPerformed
