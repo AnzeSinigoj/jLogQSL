@@ -12,7 +12,7 @@ The **first stable release** will be made once all features are complete.
 - Statistics
 - Custom query
 - Sync time with NTP
-- Manua
+- Manual
 
 ## Requirements
 - **Java** (JDK 8 or higher)
