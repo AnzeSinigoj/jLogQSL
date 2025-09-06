@@ -19,3 +19,7 @@ The **first stable release** will be made once all features are complete.
 
 ## Platforms
 - Works on **all platforms** that support Java (Windows, macOS, Linux)
+
+## Pictures
+
+![jLogQSL main page](readme_pics/jLogQSL.png)
