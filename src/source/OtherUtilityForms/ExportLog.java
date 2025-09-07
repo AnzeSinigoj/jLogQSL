@@ -277,6 +277,78 @@ public class ExportLog extends javax.swing.JPanel {
         }
     }
 
+    public void exToADIF(PrintWriter pw, String[][] data) {
+//        <field_name:length>value
+//        <CALL:5>S52AB
+//        <QSO_DATE:8>20250905
+//        <TIME_ON:4>1230
+//        <RST_SENT:2>59
+//        <RST_RCVD:2>59
+//        <BAND:3>20M
+//        <MODE:3>SSB
+//        <PWR:3>100
+//        <FREQ:7>14.2500
+//        <QTH:6>Ljublj
+//        <MY_QTH:6>Maribor
+//        <COMMENT:15>Worked during contest
+//        <EOR>
+
+        //Skip the first entry containing field names
+        for (int i = 1; i < data.length; i++) {
+            //Extracting values of date and time
+            String[] split = data[i][2].split(" ");
+            String date = split[0].replaceAll("-", "");
+            String time =  split[1].replaceAll(":", "").substring(0,4);
+
+            pw.print(returnAdifFormat(data[i][1], 1)); // CALLSIGN
+            pw.print(returnAdifFormat(date, 2));       // DATE 
+            pw.print(returnAdifFormat(time, 3));       // TIME
+            pw.print(returnAdifFormat(data[i][3], 4)); // SENT REPORT
+            pw.print(returnAdifFormat(data[i][4], 5)); // RECEIVED REPORT
+            pw.print(returnAdifFormat(data[i][5], 6)); // BAND
+            pw.print(returnAdifFormat(data[i][6], 7)); // MODE
+            pw.print(returnAdifFormat(data[i][7], 8)); // POWER
+            pw.print(returnAdifFormat(data[i][8], 9)); // FREQUENCY
+            pw.print(returnAdifFormat(data[i][9], 10)); // QTH
+            pw.print(returnAdifFormat("My QTH: " + data[i][10] + " Note: " + data[i][11], 11)); // MY QTH / NOTE
+            pw.println("<EOR>");
+        }
+    }
+
+    public String returnAdifFormat(String entry, int type) {
+        //1 = call, 2 = date, 3 = time, 4 = sent, 5 received, 6 = band, 7 = mode, 8 = pwr, 9 = frewq, 10 = qth, 11 = note and myqth
+        int len = (entry == null) ? 0 : entry.length();
+        entry = (entry == null) ? "" : entry;
+        entry = entry.replaceAll("[\\n\\r\\t]", " ");
+
+        switch (type) {
+            case 1:
+                return "<CALL:" + len + ">" + entry;
+            case 2:
+                return "<QSO_DATE:" + len + ">" + entry;
+            case 3:
+                return "<TIME_ON:" + len + ">" + entry;
+            case 4:
+                return "<RST_SENT:" + len + ">" + entry;
+            case 5:
+                return "<RST_RCVD:" + len + ">" + entry;
+            case 6:
+                return "<BAND:" + len + ">" + entry;
+            case 7:
+                return "<MODE:" + len + ">" + entry;
+            case 8:
+                return "<PWR:" + len + ">" + entry;
+            case 9:
+                return "<FREQ:" + len + ">" + entry;
+            case 10:
+                return "<QTH:" + len + ">" + entry;
+            case 11:
+                return "<COMMENT:" + len + ">" + entry;
+            default:
+                return "";
+        }
+
+    }
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         String sql_call = "SELECT L.ID AS ID, L.callsign AS CALLSIGN, L.date AS 'DATE & TIME', L.sent_report AS 'SENT REPORT', L.received_report AS 'RECEIVED REPORT', "
@@ -292,9 +364,13 @@ public class ExportLog extends javax.swing.JPanel {
             switch (jComboBox1.getSelectedIndex()) {
                 case 0:
                     // ADIF (.adi)
+                    exToADIF(pw, data);
+                    pw.close();
                     break;
                 case 1:
                     //ADIF (.log)
+                    exToADIF(pw, data);
+                    pw.close();
                     break;
                 case 2:
                     //CSV (.csv)
