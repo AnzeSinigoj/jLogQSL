@@ -225,6 +225,7 @@ public class Main extends javax.swing.JFrame {
         setTitle("jLogQSL");
         setIconImage(new ImageIcon(getClass().getResource("/lib/jLogQSL_icon.png")).getImage().getScaledInstance(32, 32, java.awt.Image.SCALE_SMOOTH));
         setMinimumSize(new java.awt.Dimension(851, 568));
+        setResizable(false);
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowOpened(java.awt.event.WindowEvent evt) {
                 formWindowOpened(evt);
@@ -448,69 +449,94 @@ public class Main extends javax.swing.JFrame {
                                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                         .addComponent(jComboBox3, javax.swing.GroupLayout.Alignment.LEADING, 0, 228, Short.MAX_VALUE)
                                         .addComponent(jTextField7, javax.swing.GroupLayout.Alignment.LEADING)))))))
-                .addGap(6, 6, 6))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap(12, Short.MAX_VALUE)
-                .addComponent(jLabel15)
+                .addGap(12, 12, 12)
+                .addComponent(jLabel15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel5)
+                                .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jLabel6)
-                                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addGap(4, 4, 4)
+                                        .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                    .addComponent(jTextField3)))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jTextField2)
+                                .addGap(32, 32, 32)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jLabel16)
+                        .addComponent(jLabel16, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGap(12, 12, 12)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel11)
-                            .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(4, 4, 4)
+                                .addComponent(jLabel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(jTextField9))
+                        .addGap(1, 1, 1))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jLabel7)
-                                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addGap(4, 4, 4)
+                                        .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                    .addComponent(jTextField1))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jLabel8)
-                                    .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addGap(4, 4, 4)
+                                        .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                    .addComponent(jTextField5)))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jLabel9)
-                                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addGap(4, 4, 4)
+                                        .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                    .addComponent(jComboBox1))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel10)
-                                    .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addComponent(jLabel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addGap(4, 4, 4))
+                                    .addComponent(jComboBox2))))
                         .addGap(41, 41, 41)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel14)
-                            .addComponent(jLabel4))))
+                            .addComponent(jComboBox3)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(4, 4, 4)
+                                .addComponent(jLabel14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(4, 4, 4)
+                                .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextField4)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel13)
-                        .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jLabel20))
-                    .addComponent(jLabel19))
+                        .addGroup(jPanel1Layout.createSequentialGroup()
+                            .addGap(4, 4, 4)
+                            .addComponent(jLabel13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(jTextField7)
+                        .addGroup(jPanel1Layout.createSequentialGroup()
+                            .addGap(4, 4, 4)
+                            .addComponent(jLabel20, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel19, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(4, 4, 4)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel12)
+                .addComponent(jLabel12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton1)
+                .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel21))
+                .addComponent(jLabel21, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jMenuBar1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -776,13 +802,16 @@ public class Main extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel17)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel17))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 846, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -790,14 +819,14 @@ public class Main extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(23, 23, 23)
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(27, 27, 27)
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel17)
-                .addGap(10, 10, 10))
+                .addContainerGap())
         );
 
         pack();
@@ -809,134 +838,6 @@ public class Main extends javax.swing.JFrame {
         loadDB();
         startDateTimeUpdater();
     }//GEN-LAST:event_formWindowOpened
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        //Data reqired
-        String call = "", s_rp = "", band = "", date = "", r_rp = "", mode = "";
-        boolean isFull = true;
-        if ((call = jTextField2.getText().trim()).equals("")) {
-            jTextField2.setBackground(Color.red);
-            jTextField2.setForeground(Color.black);
-            jLabel21.setText("Input missing!");
-            jLabel21.setForeground(Color.red);
-            isFull = false;
-        }
-        if ((s_rp = jTextField1.getText().trim()).equals("")) {
-            jTextField1.setBackground(Color.red);
-            jTextField1.setForeground(Color.black);
-            jLabel21.setText("Input missing!");
-            jLabel21.setForeground(Color.red);
-            isFull = false;
-        }
-        if ((date = jTextField3.getText().trim()).equals("")) {
-            jTextField3.setBackground(Color.red);
-            jTextField3.setForeground(Color.black);
-            jLabel21.setText("Input missing!");
-            jLabel21.setForeground(Color.red);
-            isFull = false;
-        }
-        if ((r_rp = jTextField5.getText().trim()).equals("")) {
-            jTextField5.setBackground(Color.red);
-            jTextField5.setForeground(Color.black);
-            jLabel21.setText("Input missing!");
-            jLabel21.setForeground(Color.red);
-            isFull = false;
-        }
-
-        band = String.valueOf(jComboBox1.getSelectedItem());
-        mode = String.valueOf(jComboBox2.getSelectedItem());
-
-        //Optional data
-        String freq = jTextField9.getText().trim();
-        String pwr = jTextField4.getText().trim();
-        String qth = jTextField7.getText().trim();
-        String myQth = String.valueOf(jComboBox3.getSelectedItem());
-        String note = jTextArea1.getText();
-
-        //Check if power is a number
-        Double pwr_v = 0.0;
-        try {
-            if (!pwr.isEmpty()) {
-                pwr_v = Double.parseDouble(pwr);
-            }
-        } catch (Exception e) {
-            jOptionPane1.showMessageDialog(null, "Power must be a decimal number.", "Error", JOptionPane.ERROR_MESSAGE);
-        }
-
-        if (isFull) {
-            try {
-                DatabaseTools dbt = new DatabaseTools();
-                String sql = "INSERT INTO log_entries(callsign, date, sent_report, received_report, power, frequency, qth, note, custom_qths_id, modes_id, bands_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
-
-                try (Connection DBcon = dbt.connectToDB(new File(DBpathPublic)); PreparedStatement pstmt = DBcon.prepareStatement(sql)) {
-                    //Set all except the FK fields
-                    pstmt.setString(1, call.toUpperCase());
-                    dbt.setStringOrNull(pstmt, 2, date);
-                    dbt.setStringOrNull(pstmt, 3, s_rp);
-                    dbt.setStringOrNull(pstmt, 4, r_rp);
-                    pstmt.setDouble(5, pwr_v);
-                    dbt.setStringOrNull(pstmt, 6, freq);
-                    dbt.setStringOrNull(pstmt, 7, qth);
-                    dbt.setStringOrNull(pstmt, 8, note);
-
-                    String id_qth = dbt.returnQthID(myQth, DBpathPublic, jOptionPane1);
-                    String id_mode = dbt.returnModeID(mode, DBpathPublic, jOptionPane1);
-                    String id_band = dbt.returnBandID(band, DBpathPublic, jOptionPane1);
-
-                    System.out.println(id_qth + "\n" + id_mode + "\n" + id_band);
-
-                    // QTH
-                    if (id_qth.equals("-1")) {
-                        pstmt.setNull(9, java.sql.Types.VARCHAR);
-                    } else {
-                        pstmt.setInt(9, Integer.parseInt(id_qth));
-                    }
-
-                    // Mode
-                    if (id_mode.equals("-1")) {
-                        pstmt.setNull(10, java.sql.Types.INTEGER);
-                    } else {
-                        pstmt.setInt(10, Integer.parseInt(id_mode));
-                    }
-
-                    // Band
-                    if (id_band.equals("-1")) {
-                        pstmt.setNull(11, java.sql.Types.INTEGER);
-                    } else {
-                        pstmt.setInt(11, Integer.parseInt(id_band));
-                    }
-
-                    pstmt.executeUpdate();
-
-                    //Flash QSO saved text
-                    jLabel21.setForeground(new Color(51, 204, 0));
-                    jLabel21.setText("QSO saved!");
-
-                    new javax.swing.Timer(1000, e -> {
-                        jLabel21.setForeground(new Color(60, 63, 65));
-                        ((javax.swing.Timer) e.getSource()).stop();
-                    }).start();
-
-                    //Clear fields
-                    jTextField1.setText("");
-                    jTextField2.setText("");
-                    jTextField3.setText("");
-                    jTextField4.setText("");
-                    jTextField5.setText("");
-                    jTextField7.setText("");
-                    jTextField9.setText("");
-                    jTextArea1.setText("");
-                    UserInput = false;
-
-                } catch (SQLException e) {
-                    jOptionPane1.showMessageDialog(null, "Failed to write to database.", "Error", JOptionPane.ERROR_MESSAGE);
-                    e.printStackTrace();
-                }
-            } catch (Exception e) {
-                jOptionPane1.showMessageDialog(null, "Unknown error.", "Error", JOptionPane.ERROR_MESSAGE);
-            }
-        }
-    }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
         JFileChooser chooser = new JFileChooser();
@@ -1188,6 +1089,138 @@ public class Main extends javax.swing.JFrame {
         jOptionPane1.showMessageDialog(null, "Reload successful.", "Success", JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_jMenuItem26ActionPerformed
 
+    private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
+        showPanelAndWait(new ExportLog(), "Export log");
+    }//GEN-LAST:event_jMenuItem5ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        //Data reqired
+        String call = "", s_rp = "", band = "", date = "", r_rp = "", mode = "";
+        boolean isFull = true;
+        if ((call = jTextField2.getText().trim()).equals("")) {
+            jTextField2.setBackground(Color.red);
+            jTextField2.setForeground(Color.black);
+            jLabel21.setText("Input missing!");
+            jLabel21.setForeground(Color.red);
+            isFull = false;
+        }
+        if ((s_rp = jTextField1.getText().trim()).equals("")) {
+            jTextField1.setBackground(Color.red);
+            jTextField1.setForeground(Color.black);
+            jLabel21.setText("Input missing!");
+            jLabel21.setForeground(Color.red);
+            isFull = false;
+        }
+        if ((date = jTextField3.getText().trim()).equals("")) {
+            jTextField3.setBackground(Color.red);
+            jTextField3.setForeground(Color.black);
+            jLabel21.setText("Input missing!");
+            jLabel21.setForeground(Color.red);
+            isFull = false;
+        }
+        if ((r_rp = jTextField5.getText().trim()).equals("")) {
+            jTextField5.setBackground(Color.red);
+            jTextField5.setForeground(Color.black);
+            jLabel21.setText("Input missing!");
+            jLabel21.setForeground(Color.red);
+            isFull = false;
+        }
+
+        band = String.valueOf(jComboBox1.getSelectedItem());
+        mode = String.valueOf(jComboBox2.getSelectedItem());
+
+        //Optional data
+        String freq = jTextField9.getText().trim();
+        String pwr = jTextField4.getText().trim();
+        String qth = jTextField7.getText().trim();
+        String myQth = String.valueOf(jComboBox3.getSelectedItem());
+        String note = jTextArea1.getText();
+
+        //Check if power is a number
+        Double pwr_v = 0.0;
+        try {
+            if (!pwr.isEmpty()) {
+                pwr_v = Double.parseDouble(pwr);
+            }
+        } catch (Exception e) {
+            jOptionPane1.showMessageDialog(null, "Power must be a decimal number.", "Error", JOptionPane.ERROR_MESSAGE);
+        }
+
+        if (isFull) {
+            try {
+                DatabaseTools dbt = new DatabaseTools();
+                String sql = "INSERT INTO log_entries(callsign, date, sent_report, received_report, power, frequency, qth, note, custom_qths_id, modes_id, bands_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+
+                try (Connection DBcon = dbt.connectToDB(new File(DBpathPublic)); PreparedStatement pstmt = DBcon.prepareStatement(sql)) {
+                    //Set all except the FK fields
+                    pstmt.setString(1, call.toUpperCase());
+                    dbt.setStringOrNull(pstmt, 2, date);
+                    dbt.setStringOrNull(pstmt, 3, s_rp);
+                    dbt.setStringOrNull(pstmt, 4, r_rp);
+                    pstmt.setDouble(5, pwr_v);
+                    dbt.setStringOrNull(pstmt, 6, freq);
+                    dbt.setStringOrNull(pstmt, 7, qth);
+                    dbt.setStringOrNull(pstmt, 8, note);
+
+                    String id_qth = dbt.returnQthID(myQth, DBpathPublic, jOptionPane1);
+                    String id_mode = dbt.returnModeID(mode, DBpathPublic, jOptionPane1);
+                    String id_band = dbt.returnBandID(band, DBpathPublic, jOptionPane1);
+
+                    System.out.println(id_qth + "\n" + id_mode + "\n" + id_band);
+
+                    // QTH
+                    if (id_qth.equals("-1")) {
+                        pstmt.setNull(9, java.sql.Types.VARCHAR);
+                    } else {
+                        pstmt.setInt(9, Integer.parseInt(id_qth));
+                    }
+
+                    // Mode
+                    if (id_mode.equals("-1")) {
+                        pstmt.setNull(10, java.sql.Types.INTEGER);
+                    } else {
+                        pstmt.setInt(10, Integer.parseInt(id_mode));
+                    }
+
+                    // Band
+                    if (id_band.equals("-1")) {
+                        pstmt.setNull(11, java.sql.Types.INTEGER);
+                    } else {
+                        pstmt.setInt(11, Integer.parseInt(id_band));
+                    }
+
+                    pstmt.executeUpdate();
+
+                    //Flash QSO saved text
+                    jLabel21.setForeground(new Color(51, 204, 0));
+                    jLabel21.setText("QSO saved!");
+
+                    new javax.swing.Timer(1000, e -> {
+                        jLabel21.setForeground(new Color(60, 63, 65));
+                        ((javax.swing.Timer) e.getSource()).stop();
+                    }).start();
+
+                    //Clear fields
+                    jTextField1.setText("");
+                    jTextField2.setText("");
+                    jTextField3.setText("");
+                    jTextField4.setText("");
+                    jTextField5.setText("");
+                    jTextField7.setText("");
+                    jTextField9.setText("");
+                    jTextArea1.setText("");
+                    UserInput = false;
+
+                } catch (SQLException e) {
+                    jOptionPane1.showMessageDialog(null, "Failed to write to database.", "Error", JOptionPane.ERROR_MESSAGE);
+                    e.printStackTrace();
+                }
+            } catch (Exception e) {
+                jOptionPane1.showMessageDialog(null, "Unknown error.", "Error", JOptionPane.ERROR_MESSAGE);
+            }
+        }
+    }//GEN-LAST:event_jButton1ActionPerformed
+
     private void jTextField3KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField3KeyPressed
         jTextField3.setBackground(new Color(70, 73, 75));
         jTextField3.setForeground(new Color(204, 204, 204));
@@ -1239,10 +1272,6 @@ public class Main extends javax.swing.JFrame {
         jTextField5.setBackground(new Color(70, 73, 75));
         jTextField5.setForeground(new Color(204, 204, 204));
     }//GEN-LAST:event_jTextField5MouseClicked
-
-    private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
-        showPanelAndWait(new ExportLog(), "Export log");
-    }//GEN-LAST:event_jMenuItem5ActionPerformed
 
     /**
      * @param args the command line arguments
