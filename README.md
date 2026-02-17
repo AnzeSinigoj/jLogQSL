@@ -11,10 +11,7 @@ The **first stable release** will be made once all of the listed features are co
 - Exporting to PDF
 - Statistics 
 - Sync time with NTP
-
-#### Later implementation:
-- Manual
-- Custom query
+- Documentation/Manual
 
 ## Requirements
 - **Java** (JDK 8 or higher)
