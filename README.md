@@ -10,7 +10,8 @@ The **first stable release** will be made once all of the listed features are co
 #### Missing features:
 - Exporting to PDF
 - Statistics 
-- Sync time with NTP
+
+#### Later implementation:
 - Documentation/Manual
 
 ## Requirements
