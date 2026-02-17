@@ -230,9 +230,8 @@ public class Main extends javax.swing.JFrame {
         jMenuItem17 = new javax.swing.JMenuItem();
         jMenuItem18 = new javax.swing.JMenuItem();
         jMenuItem19 = new javax.swing.JMenuItem();
+        jSeparator6 = new javax.swing.JPopupMenu.Separator();
         jMenuItem20 = new javax.swing.JMenuItem();
-        jSeparator4 = new javax.swing.JPopupMenu.Separator();
-        jMenuItem21 = new javax.swing.JMenuItem();
         jMenu4 = new javax.swing.JMenu();
         jMenuItem22 = new javax.swing.JMenuItem();
         jMenuItem23 = new javax.swing.JMenuItem();
@@ -737,6 +736,7 @@ public class Main extends javax.swing.JFrame {
             }
         });
         jMenu3.add(jMenuItem19);
+        jMenu3.add(jSeparator6);
 
         jMenuItem20.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_5, java.awt.event.InputEvent.ALT_DOWN_MASK));
         jMenuItem20.setText("View owner data");
@@ -746,16 +746,6 @@ public class Main extends javax.swing.JFrame {
             }
         });
         jMenu3.add(jMenuItem20);
-        jMenu3.add(jSeparator4);
-
-        jMenuItem21.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_S, java.awt.event.InputEvent.ALT_DOWN_MASK));
-        jMenuItem21.setText("View statistics (n/a)");
-        jMenuItem21.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem21ActionPerformed(evt);
-            }
-        });
-        jMenu3.add(jMenuItem21);
 
         jMenuBar1.add(jMenu3);
 
@@ -1301,10 +1291,6 @@ public class Main extends javax.swing.JFrame {
         jTextField3.setText("");
     }//GEN-LAST:event_jTextField3FocusGained
 
-    private void jMenuItem21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem21ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem21ActionPerformed
-
     /**
      * @param args the command line arguments
      */
@@ -1362,7 +1348,6 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem19;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem20;
-    private javax.swing.JMenuItem jMenuItem21;
     private javax.swing.JMenuItem jMenuItem22;
     private javax.swing.JMenuItem jMenuItem23;
     private javax.swing.JMenuItem jMenuItem24;
@@ -1382,8 +1367,8 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JPopupMenu.Separator jSeparator1;
     private javax.swing.JPopupMenu.Separator jSeparator2;
     private javax.swing.JPopupMenu.Separator jSeparator3;
-    private javax.swing.JPopupMenu.Separator jSeparator4;
     private javax.swing.JPopupMenu.Separator jSeparator5;
+    private javax.swing.JPopupMenu.Separator jSeparator6;
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
