@@ -111,12 +111,11 @@
     <Component class="javax.swing.JComboBox" name="jComboBox1">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="5">
+          <StringArray count="4">
             <StringItem index="0" value="ADIF (.adi)"/>
             <StringItem index="1" value="ADIF (.log)"/>
             <StringItem index="2" value="CSV (.csv)"/>
             <StringItem index="3" value="TXT (.txt)"/>
-            <StringItem index="4" value="PDF (.pdf)"/>
           </StringArray>
         </Property>
       </Properties>

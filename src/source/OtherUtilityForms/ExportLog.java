@@ -61,7 +61,7 @@ public class ExportLog extends javax.swing.JPanel {
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel1.setText("Choose export format:");
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "ADIF (.adi)", "ADIF (.log)", "CSV (.csv)", "TXT (.txt)", "PDF (.pdf)" }));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "ADIF (.adi)", "ADIF (.log)", "CSV (.csv)", "TXT (.txt)" }));
         jComboBox1.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
                 jComboBox1FocusGained(evt);
@@ -430,9 +430,6 @@ public class ExportLog extends javax.swing.JPanel {
                     }
                     pw.println("+" + "-".repeat(total_len) + "+"); //Print the last bar
                     pw.close();
-                    break;
-                case 4:
-                    //PDF (.pdf)
                     break;
             }
             jOptionPane1.showMessageDialog(null, "Log successfully exported.", "Success.", JOptionPane.INFORMATION_MESSAGE);
